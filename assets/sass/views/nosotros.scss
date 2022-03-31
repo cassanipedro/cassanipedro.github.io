@@ -1,0 +1,83 @@
+.body__nosotros{
+    background-color:map-get($map__variable,background);
+    display:map-get($map__variable,distribute);
+    grid-template-columns:map-get($map__variable,column);
+    grid-template-rows:map-get($map__variable,row);
+    row-gap:map-get($map__variable,gapss);
+    min-height:map-get($map__variable,gen);
+    
+    }.arreglo1{
+        position: sticky;
+        z-index: 20;
+    }.wpp__position{
+@include position(2,5);
+    
+    }.wpp__image {
+        height: 120vh;
+        width: 500%;
+    
+        border-style: solid;
+        border-width: 3px;
+        padding: 2%;
+        margin: 8px;
+        border-color: #CE241A;
+    }
+    .cattering__information {
+        grid-row: 3/3;
+        grid-column: 2/12;
+        display: flex;
+        flex-direction: row;
+    }
+    .coffetruck__format {
+        position: relative;
+        height: 54vh;
+    }
+    .information__format{
+        @include position(3/3,5/10);
+        }
+    .information__format2  {
+        position: relative;
+        font-size: 80px;
+        font-family: 'Italiana', serif;
+        color: #CE241A;
+        text-decoration-line: overline;
+        text-decoration-color: #956027;
+        justify-items: center;
+        align-items: end;
+        top:20%;
+    
+    }
+    .table__format {
+        background-image: linear-gradient(#a58d74,green);
+        grid-row:4;
+        grid-column:4/11;
+        position: relative;
+        width: 100%;
+        border: 2px double;
+        height: 30%;
+        justify-items: center;
+    }
+    @media only screen and (max-width: 600px) {
+        .wpp__image {
+            height: 80vh;
+            width: 700%;
+        
+            border-style: solid;
+            border-width: 3px;
+            padding: 2%;
+            margin: 8px;
+            border-color: #CE241A;
+        }
+        .information__format2  {
+            position: relative;
+            font-size: 20px;
+            font-family: 'Italiana', serif;
+            color: #CE241A;
+            text-decoration-line: overline;
+            text-decoration-color: #956027;
+            justify-items: center;
+            align-items: end;
+            top:20%;
+        
+        }
+    }
