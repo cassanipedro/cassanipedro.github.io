@@ -16,6 +16,8 @@ header {
   grid-row-end: 1; }
 
 body {
+  max-width: 100%;
+  overflow-x: hidden;
   background-color: #1f322e;
   background-color: #A1DED2; }
 
@@ -77,11 +79,22 @@ main {
   .footer--line h3 {
     font-size: 36px; }
 
-.footer--information {
+.footer--style {
   list-style-type: none; }
-
+.logos{
+color: black;
+font-size: 3rem;
+background: linear-gradient(#e66465, #9198e5);
+}
+.logosw{
+  color: black;
+  font-size: 3rem;
+  background: linear-gradient(#e66465, #9198e5);
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+  }
 .footer--information {
-  text-align: center; }
+  text-align: center; 
+background-color: rgba(255, 255, 255, 0.3);}
 
 @media only screen and (max-width: 600px) {
   .footer__format1 p {
@@ -140,14 +153,14 @@ main {
 
 .head__format1 {
   font-weight: bold;
-  margin: 10%;
+  margin-top: 5%;
   text-align: left;
   grid-row: 2/2;
   grid-column: 1/4; }
 
 .head__format2 {
   font-weight: bold;
-  margin: 10%;
+  margin-top:5%;
   text-align: left;
   grid-row: 2/2;
   grid-column: 1/4; }
@@ -159,10 +172,10 @@ main {
   display: flex;
   flex-direction: row;
   width: 100%;
-  left: 20%; }
+  margin-top: 5%; }
 
 .form__format {
-  width: 13vw;
+  width: 30vw;
   padding: 20px 20px;
   border-radius: 8px;
   background-color: burlywood;
@@ -221,6 +234,7 @@ main {
   grid-column: 2/12; }
 
 .califications__style1 {
+  min-width: 300px;
   height: 40%;
   width: 30%;
   border: solid;
@@ -235,6 +249,7 @@ main {
     flex-direction: column;
     justify-content: space-around; }
   .califications__style1 {
+    min-width: 300px;
     height: 50%;
     width: 50%;
     border: solid;
@@ -264,11 +279,10 @@ main {
   margin: 1rem 1rem 1rem 1rem; }
 
 .panorama {
-  width: 80%;
+  width: 100%;
   display: grid;
-  grid-row: 4;
-  grid-column-start: 1;
-  grid-column-end: 12; }
+
+ }
 
 .historia--format {
   display: flex;
@@ -489,7 +503,7 @@ main {
   left: 40%;
   background-color: rgba(0, 0, 0, 0);
   height: 84%;
-  width: 50%;
+  width: 100%;
   size: auto;
   text-align: center;
   display: flex;
@@ -503,7 +517,7 @@ main {
     padding-bottom: 10vh; }
   .txt h4 {
     font-size: 1rem;
-    color: #CE241A;
+    color: #e5e0e0;
     overflow: visible; }
   .txt:hover {
     background-color: rgba(0, 0, 0, 0.6);
@@ -528,7 +542,7 @@ main {
     left: 40%;
     background-color: rgba(0, 0, 0, 0);
     height: 84%;
-    width: 80%;
+    width: 100%;
     size: auto;
     text-align: center;
     display: flex;
@@ -542,7 +556,7 @@ main {
       padding-bottom: 3vh; }
     .txt h4 {
       font-size: 0.5rem;
-      color: #CE241A;
+      color: #fdfdfd;
       overflow: visible; }
     .txt:hover {
       background-color: rgba(0, 0, 0, 0.6);
