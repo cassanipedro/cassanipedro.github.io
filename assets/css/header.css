@@ -8,7 +8,10 @@
     grid-auto-rows: (100px,auto);
     row-gap: 8ch;
 }
-
+#wpp__hour{
+    grid-row: 2;
+    grid-column: 2;
+}
 .distribution__historia{
     background-color: var(--principal);
     display:grid;
